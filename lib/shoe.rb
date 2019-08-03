@@ -1,4 +1,3 @@
-require 'pry'
 
 class Shoe
   attr_accessor :color, :size, :material, :condition
@@ -22,6 +21,5 @@ class Shoe
 
   def group(brand)
       brand.group_by {|x| x.split(", ")}.count
-      binding.pry
     end
 end
