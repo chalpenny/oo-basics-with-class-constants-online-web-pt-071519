@@ -8,7 +8,11 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS << brand
+    BRANDS.uniq! 
   end
+
+  #BRANDS << brand
+	#BRANDS = BRANDS.uniq
 
   def brand=(brand)
       @brand = brand
@@ -19,7 +23,7 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def group(brand)
-      brand.group_by {|x| x.split(", ")}.count
-    end
+  #def group(brand)
+  #    brand.group_by {|x| x.split(", ")}.count
+  #  end
 end
