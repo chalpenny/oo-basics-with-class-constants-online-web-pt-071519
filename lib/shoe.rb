@@ -18,4 +18,8 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
+  def group(brand)
+      brand.group_by {|x| x.split(", ")}.count
+    end
+  
 end
