@@ -21,5 +21,5 @@ class Shoe
   def group(brand)
       brand.group_by {|x| x.split(", ")}.count
     end
-  
+
 end
